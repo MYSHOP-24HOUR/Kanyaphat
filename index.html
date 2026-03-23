@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shop Name</title>
+<title>Moowan shop</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&family=Kanit:wght@400;500;600&display=swap" rel="stylesheet">
 
@@ -22,14 +22,14 @@
   }
 }
 
-/* ===== Background (NEW COLOR) ===== */
+/* ===== Background (Soft Gradient) ===== */
 body{
   margin:0;
   background:linear-gradient(
     180deg,
-    #CB464A 0%,
-    #DF6033 50%,
-    #CE9447 100%
+    #f7b3b6 0%,
+    #f9c4a8 50%,
+    #f4e1c6 100%
   );
   font-family:'Kanit',sans-serif;
   text-align:center;
@@ -42,8 +42,8 @@ body::before{
   position:fixed;
   width:320px;
   height:320px;
-  background:#DF6033;
-  filter:blur(140px);
+  background:#ffd9c7;
+  filter:blur(150px);
   top:-120px;
   left:-120px;
   z-index:-1;
@@ -58,7 +58,7 @@ h1,h2,.navbar{
 .navbar{
   position:sticky;
   top:0;
-  background:rgba(255,255,255,0.75);
+  background:rgba(255,255,255,0.8);
   backdrop-filter:blur(15px);
   padding:15px;
   font-weight:600;
@@ -80,13 +80,12 @@ h1,h2,.navbar{
   border-radius:50%;
   object-fit:cover;
   margin-bottom:15px;
-  box-shadow:0 10px 25px rgba(0,0,0,.18);
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
 /* ===== Title ===== */
 h1{
-  color:#ffffff;
-  text-shadow:0 3px 10px rgba(0,0,0,.15);
+  color:#CB464A;
 }
 
 /* ===== Button ===== */
@@ -103,7 +102,7 @@ h1{
   backdrop-filter:blur(10px);
 
   box-shadow:
-    0 4px 12px rgba(0,0,0,0.12),
+    0 4px 12px rgba(0,0,0,0.1),
     inset 0 1px 1px rgba(255,255,255,0.7);
 
   transition:.25s;
@@ -111,7 +110,7 @@ h1{
 
 .button:hover{
   transform:translateY(-3px);
-  background:#fff;
+  background:#ffffff;
 }
 
 /* ===== Footer ===== */
@@ -120,7 +119,7 @@ h1{
   padding:28px;
   font-size:14px;
   color:#CB464A;
-  background:rgba(255,255,255,.7);
+  background:rgba(255,255,255,.75);
   backdrop-filter:blur(12px);
   border-radius:30px 30px 0 0;
 }
@@ -130,27 +129,33 @@ h1{
 
 <body>
 
+<!-- ===== Navbar ===== -->
 <div class="navbar">
-🍭 SHOP NAME
+Moowan shop
 </div>
 
 <div class="container">
 
+<!-- ===== Logo ===== -->
 <img class="logo" src="logo.jpg">
 
-<h1>YOUR TITLE HERE</h1>
+<!-- ===== Title ===== -->
+<h1>รอใส่</h1>
 
+<!-- ===== Menu Buttons ===== -->
 <a class="button" href="#">สินค้า 1</a>
 <a class="button" href="#">สินค้า 2</a>
 <a class="button" href="#">สินค้า 3</a>
 
+<!-- ===== Social ===== -->
 <a class="button" href="#">Instagram</a>
 <a class="button" href="#">Facebook</a>
 <a class="button" href="#">LINE</a>
 
+<!-- ===== Footer ===== -->
 <div class="footer">
-© 2026 YOUR SHOP NAME<br>
-ร้านค้าออนไลน์
+© รอใส่ข้อความ<br>
+รอใส่
 </div>
 
 </div>
