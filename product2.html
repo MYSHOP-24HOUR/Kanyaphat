@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@ body{
   text-align:center;
 }
 
-/* glow */
+/* glow light */
 body::before{
   content:"";
   position:fixed;
@@ -61,6 +61,7 @@ h3{
   padding:15px;
   margin-bottom:22px;
   backdrop-filter:blur(10px);
+  cursor:pointer;
 
   box-shadow:
     0 6px 18px rgba(0,0,0,0.12),
@@ -73,9 +74,11 @@ h3{
   transform:translateY(-4px);
 }
 
+/* image */
 .product-img{
   width:100%;
   border-radius:15px;
+  object-fit:cover;
 }
 
 .desc{
@@ -122,40 +125,40 @@ h3{
 
 <!-- ===== PRODUCT ===== -->
 <div class="product-card">
-  <img class="product-img" src="IMG_1865.jpeg">
+  <img class="product-img" src="IMG_1865.jpeg" alt="Netflix" loading="lazy">
   <h3>Netflix</h3>
 </div>
 
 <div class="product-card">
-  <img class="product-img" src="IMG_1866.jpeg">
+  <img class="product-img" src="IMG_1866.jpeg" alt="WeTV" loading="lazy">
   <h3>WeTV</h3>
 </div>
 
 <div class="product-card">
-  <img class="product-img" src="IMG_1867.jpeg">
+  <img class="product-img" src="IMG_1867.jpeg" alt="IQIYI UID" loading="lazy">
   <h3>IQIYI (UID)</h3>
 </div>
 
 <div class="product-card">
-  <img class="product-img" src="IMG_1868.jpeg">
+  <img class="product-img" src="IMG_1868.jpeg" alt="YouTube Premium" loading="lazy">
   <h3>YouTube premium</h3>
 </div>
 
 <div class="product-card">
-  <img class="product-img" src="IMG_1869.jpeg">
+  <img class="product-img" src="IMG_1869.jpeg" alt="YOUKU" loading="lazy">
   <h3>YOUKU</h3>
 </div>
 
 <div class="product-card">
-  <img class="product-img" src="IMG_1870.jpeg">
+  <img class="product-img" src="IMG_1870.jpeg" alt="BiliBili" loading="lazy">
   <h3>BiliBili</h3>
 </div>
 
 <div class="product-card">
-  <img class="product-img" src="IMG_1871.jpeg">
+  <img class="product-img" src="IMG_1871.jpeg" alt="ch plus" loading="lazy">
   <h3>ch+</h3>
 </div>
-  
+
 <!-- ปุ่มกลับ -->
 <a class="button" href="index.html">⬅ กลับหน้าหลัก</a>
 
