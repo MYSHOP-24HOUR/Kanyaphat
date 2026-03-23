@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>สติ๊กเกอร์ไลน์/title>
+<title>สติ๊กเกอร์ไลน์</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -61,6 +61,7 @@ h3{
   padding:15px;
   margin-bottom:22px;
   backdrop-filter:blur(10px);
+  cursor:pointer;
 
   box-shadow:
     0 6px 18px rgba(0,0,0,0.12),
@@ -76,6 +77,7 @@ h3{
 .product-img{
   width:100%;
   border-radius:15px;
+  object-fit:cover;
 }
 
 .desc{
@@ -122,10 +124,12 @@ h3{
 
 <!-- ===== PRODUCT ===== -->
 <div class="product-card">
-  <img class="product-img" src="IMG_1873.jpeg">
+  <img class="product-img"
+       src="IMG_1873.jpeg"
+       alt="รับส่งสติ๊กเกอร์ไลน์"
+       loading="lazy">
   <h3>รับส่งสติ๊กเกอร์ไลน์</h3>
 </div>
-
 
 <!-- ปุ่มกลับ -->
 <a class="button" href="index.html">⬅ กลับหน้าหลัก</a>
