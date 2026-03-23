@@ -4,17 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PRODUCT PAGE</title>
+<title>สติ๊กเกอร์ไลน์/title>
 
 <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
+/* ===== Background ===== */
 body{
   margin:0;
-  background:#ffd6ec;
+  background:linear-gradient(
+    180deg,
+    #f48a90 0%,
+    #f6a86f 50%,
+    #f3d28f 100%
+  );
   font-family:'Kanit', sans-serif;
   text-align:center;
+}
+
+/* glow */
+body::before{
+  content:"";
+  position:fixed;
+  width:340px;
+  height:340px;
+  background:#ffd1a8;
+  filter:blur(150px);
+  top:-120px;
+  left:-120px;
+  z-index:-1;
 }
 
 .container{
@@ -25,22 +44,33 @@ body{
 
 /* ===== Title ===== */
 h1{
-  color:#ff4fa3;
+  color:white;
   font-family:'Mali', cursive;
+  text-shadow:0 3px 12px rgba(0,0,0,.2);
 }
 
 h3{
   font-family:'Mali', cursive;
-  color:#ff6bb5;
+  color:#c94a4f;
 }
 
 /* ===== Product Card ===== */
 .product-card{
-  background:white;
-  border-radius:20px;
+  background:rgba(255,255,255,0.9);
+  border-radius:22px;
   padding:15px;
-  margin-bottom:20px;
-  box-shadow:0 6px 15px rgba(0,0,0,0.1);
+  margin-bottom:22px;
+  backdrop-filter:blur(10px);
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.12),
+    inset 0 1px 1px rgba(255,255,255,0.7);
+
+  transition:.25s;
+}
+
+.product-card:hover{
+  transform:translateY(-4px);
 }
 
 .product-img{
@@ -56,18 +86,28 @@ h3{
 /* ===== Button ===== */
 .button{
   display:block;
-  margin-top:25px;
+  margin-top:30px;
   padding:16px;
-  border-radius:20px;
-  background:white;
+  border-radius:22px;
+  background:rgba(255,255,255,0.9);
   text-decoration:none;
-  color:#ff4fa3;
+  color:#c94a4f;
   font-weight:500;
-  box-shadow:0 6px 15px rgba(0,0,0,0.1);
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.12),
+    inset 0 1px 1px rgba(255,255,255,0.8);
+
+  transition:.25s;
+}
+
+.button:hover{
+  transform:translateY(-3px);
+  background:#ffffff;
 }
 
 .button:active{
-  transform:scale(0.95);
+  transform:scale(0.96);
 }
 
 </style>
@@ -78,25 +118,13 @@ h3{
 <div class="container">
 
 <!-- ===== Page Title ===== -->
-<h1>PRODUCT CATEGORY</h1>
+<h1>สติ๊กเกอร์ไลน์</h1>
 
-<!-- ===== PRODUCT TEMPLATE (คัดลอกเพิ่มได้) ===== -->
+<!-- ===== PRODUCT ===== -->
 <div class="product-card">
-
-  <!-- รูปสินค้า -->
-  <img class="product-img" src="image.jpg">
-
-  <!-- ชื่อสินค้า -->
-  <h3>PRODUCT NAME</h3>
-
-  <!-- รายละเอียด -->
-  <p class="desc">
-    ราคา xxx฿ <br>
-    รายละเอียดสินค้า
-  </p>
-
+  <img class="product-img" src="IMG_1873.jpeg">
+  <h3>รับส่งสติ๊กเกอร์ไลน์</h3>
 </div>
-<!-- ===== END TEMPLATE ===== -->
 
 
 <!-- ปุ่มกลับ -->
